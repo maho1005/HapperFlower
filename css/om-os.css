@@ -1,0 +1,127 @@
+.omos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.tekst {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.blomster-omos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+main {
+  width: 78%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tekst2 {
+  margin-top: 60px;
+  line-height: 1.8;
+}
+
+.findos-omos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
+.tekst3 {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.findos-omos h3 {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.findos-omos p {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.img-blomster {
+  margin-bottom: 2rem;
+}
+
+.img-personale {
+  margin-bottom: 3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 90%;
+  }
+
+  .omos,
+  .blomster-omos,
+  .findos-omos {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tekst {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tekst2 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 92%;
+  }
+
+  .tekst {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .tekst2,
+  .tekst3,
+  .findos-omos p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .omos,
+  .blomster-omos,
+  .findos-omos {
+    gap: 1.5rem;
+  }
+
+  .findos-omos h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .img-personale,
+  .img-blomster {
+    margin-bottom: 1rem;
+  }
+}

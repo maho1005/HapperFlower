@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="da">
   <head>
+    <meta name="robots" content="noindex" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happyflower</title>
@@ -10,35 +11,51 @@
   <body>
     <header class="site-header">
       <nav class="navigation-left">
-        <a href="blomster.html" class="blomster">Blomster</a>
+        <div class="dropdown">
+          <a href="blomster.html" class="blomster">Blomster</a>
+          <div class="dropdown-menu">
+            <a href="blomster.html">Alle blomster</a>
+            <a href="buketter.html">Buketter</a>
+            <a href="kranse.html">Kranse</a>
+            <a href="dekorationer.html">Dekorationer</a>
+          </div>
+        </div>
         <a href="#" class="nav-link">Planter</a>
         <a href="#" class="nav-link">Anledninger</a>
         <a href="#" class="nav-link">Ekstra omtanke</a>
       </nav>
 
-      <div class="logo">HappyFlower.dk</div>
+      <a href="index.html" class="logo">HappyFlower.dk</a>
 
       <nav class="navigation-right">
         <a href="#" class="nav-link">Abonnement</a>
-        <a href="#" class="nav-link">Om os</a>
+        <a href="omos.html" class="nav-link">Om os</a>
       </nav>
 
       <div class="header-icons">
         <span class="icon">Sprog</span>
         <span class="icon">Konto</span>
-        <span class="icon">Kurv</span>
+        <a href="kurv.html" class="blomster">Kurv</a>
       </div>
     </header>
 
     <main class="main-content">
       <section class="hero-section">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="herovideo.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
           <h1>Send blomster,<br />der skaber glæde</h1>
+
           <p>Hos HappyFlower.dk finder du håndbundne buketter, grønne planter og små gaver til livets store og små øjeblikke.</p>
 
           <div class="hero-buttons">
             <a href="blomster.html" class="primary-button">Se buketter</a>
-            <a href="anledninger.html" class="secondary-button">Se alle anledninger →</a>
+
+            <a href="anledninger.html" class="secondary-button"> Se alle anledninger → </a>
           </div>
         </div>
       </section>
@@ -48,22 +65,22 @@
 
         <div class="categories-grid">
           <a href="blomster.html" class="category-card">
-            <img src="images¨/buket1.png" alt="Blomster" />
+            <img src="images/buket1.webp" alt="Blomster" />
             <h3>Blomster</h3>
           </a>
 
           <a href="planter.html" class="category-card">
-            <img src="images¨/plante.png" alt="Planter" />
+            <img src="images/plante.webp" alt="Planter" />
             <h3>Planter</h3>
           </a>
 
           <a href="anledninger.html" class="category-card">
-            <img src="images¨/begravelse.png" alt="Anledninger" />
+            <img src="images/begravelse.webp" alt="Anledninger" />
             <h3>Anledninger</h3>
           </a>
 
           <a href="ekstra-omtanke.html" class="category-card">
-            <img src="images¨/kort_6.webp" alt="Ekstra omtanke" />
+            <img src="images/kort_4.webp" alt="Ekstra omtanke" />
             <h3>Ekstra omtanke</h3>
           </a>
         </div>
@@ -72,36 +89,36 @@
       <section class="products-section">
         <div class="section-header">
           <h2 class="section-title">Udvalgte Produkter</h2>
-          <a href="blomster.html">Se alle buketter →</a>
+          <a href="blomster.html">Se flere produkter →</a>
         </div>
 
         <div class="products-grid">
           <article class="product-card">
-            <img src="images¨/buket3.png" alt="Dagens buket" />
+            <img src="images/buket3.webp" alt="Den søde" />
+            <h3>Den søde</h3>
+            <p>Mark buket blomster bundet med sæsonens fineste blomster.</p>
+            <p class="price">300 DKK</p>
+          </article>
+
+          <article class="product-card">
+            <img src="images/vin.webp" alt="Produkter" />
+            <h3>Drouin Cider Demi Sec</h3>
+            <p>Den komplekse dybe, fyldige smag med røgede og animalske noter vil udvikle sig over tiden.</p>
+            <p class="price">79 DKK</p>
+          </article>
+
+          <article class="product-card">
+            <img src="images/pynt2.webp" alt="Produkter" />
+            <h3>Hårpynt</h3>
+            <p>Romantisk hårpynt med friske blomster i bløde nuancer, håndbundet til bryllupper, konfirmationer og særlige øjeblikke.</p>
+            <p class="price">375 DKK</p>
+          </article>
+
+          <article class="product-card">
+            <img src="images/dagensbuket.webp" alt="Produkter" />
             <h3>Dagens buket</h3>
             <p>Vores florist vælger frit.</p>
-            <p class="price">110 kr.</p>
-          </article>
-
-          <article class="product-card">
-            <img src="images¨/vin.png" alt="Produktivana" />
-            <h3>Produktivana</h3>
-            <p>Pink favorit buket.</p>
-            <p class="price">300 kr.</p>
-          </article>
-
-          <article class="product-card">
-            <img src="images¨/pynt2.png" alt="Produktivina" />
-            <h3>Produktivina</h3>
-            <p>Smuk farverig buket.</p>
-            <p class="price">300 kr.</p>
-          </article>
-
-          <article class="product-card">
-            <img src="images¨/dagensbuket.png" alt="Produktivitas" />
-            <h3>Produktivitas</h3>
-            <p>Stor lyserød buket.</p>
-            <p class="price">450 kr.</p>
+            <p class="price">110 DKK</p>
           </article>
         </div>
       </section>
@@ -113,13 +130,37 @@
         <div class="usp-item">👁 E-mærket<br /><span>Tryg og nem betaling</span></div>
       </section>
 
+      <section class="featured-section">
+        <h2>Du har måske set os hos</h2>
+
+        <div class="featured-logos">
+          <img src="images/bolighus.webp" alt="Illums Bolighus" />
+          <img src="images/bobedre.webp" alt="Bo Bedre" />
+          <img src="images/rhubarbstudio.webp" alt="Rhubarb Studio" />
+          <img src="images/carlachloe.webp" alt="Carla Chloe" />
+        </div>
+      </section>
+
       <section class="story-section">
-        <img src="img/florist.jpg" alt="Florist binder blomster" />
+        <img src="images/buketihånden.webp" alt="Florist binder blomster" />
 
         <div class="story-content">
           <h2>Smukke blomster til særlige øjeblikke</h2>
           <p>Fra fødselsdage og jubilæer til tak, kærlighed og trøst. Vi gør det nemt at vælge en buket, der passer til øjeblikket og modtageren.</p>
           <a href="blomster.html">Find den rette buket →</a>
+        </div>
+      </section>
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>Inspiration direkte i din indbakke</h2>
+            <p>Tilmeld dig vores nyhedsbrev og få inspiration fra sæsonens smukkeste blomster, nye buketter og særlige tilbud. Vi deler idéer til livets små og store øjeblikke - fra fødselsdage og kærlighed til hverdagsforkælelse og omtanke.</p>
+            <div class="newsletter-form">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" placeholder="Indtast din e-mail" />
+              <button class="newsletter-button">Tilmeld</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -143,7 +184,7 @@
           <p>Tirsdag-fredag kl. 10-15</p>
           <p>Tlf: +45 42 66 50 22</p>
           <p>Email: kundeservice@happyflower.dk</p>
-          <p>Mail besvares indenfor 3 dage</p>
+          <p>Mail besvares inden for 3 dage</p>
         </div>
 
         <div class="footer-column">
