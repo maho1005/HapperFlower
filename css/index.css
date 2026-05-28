@@ -511,28 +511,16 @@ img {
 /* NEWSLETTER */
 
 .newsletter-section {
-
   min-height: 700px;
-
-  background-image:
-
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-
-    url("/HapperFlower/images/newsletter.webp") !important;
-
-  background-size: cover !important;
-
-  background-position: center !important;
-
-  background-repeat: no-repeat !important;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/images/newsletter.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-
   align-items: center;
-
   padding: 0 80px;
-
 }
+
 
 .newsletter-container {
   width: 100%;
