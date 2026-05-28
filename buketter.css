@@ -1,0 +1,276 @@
+.bouquet-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero.webp");
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+}
+
+.bouquet-overlay {
+  width: 100%;
+  padding: 0 80px;
+}
+
+.bouquet-hero-text {
+  max-width: 620px;
+}
+
+.bouquet-hero h1 {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.bouquet-hero p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.bouquet-toolbar {
+  background: #feefce;
+  padding: 28px 80px 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.bouquet-toolbar button {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bouquet-grid {
+  padding: 35px 80px 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 34px;
+}
+
+.bouquet-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.bouquet-card img {
+  width: 112%;
+  height: 400px;
+  object-fit: cover;
+  padding: 12px;
+  margin-bottom: 18px;
+  transition: 0.4s ease;
+}
+
+.bouquet-card:hover img {
+  transform: scale(1.02);
+}
+
+.bouquet-card h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #1f302b;
+  padding-left: 12px;
+}
+
+.bouquet-card p {
+  font-size: 14px;
+  color: #6f7a73;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.bouquet-card span {
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 12px;
+}
+
+.produkt-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.pris {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1d2b28;
+}
+
+.hurtig-tilfoej {
+  min-width: 100px;
+  height: 36px;
+  padding: 6px 14px;
+  margin: 10px 20px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #111;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hurtig-tilfoej:hover {
+  background-color: var(--warm-beige);
+}
+
+/* ANDRE KIGGEDE OGSÅ PÅ */
+
+.also-section {
+  background: #feefce;
+  padding: 70px 80px 100px;
+}
+
+.also-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.also-header h2 {
+  font-size: 30px;
+  color: #1f302b;
+  line-height: 1;
+}
+
+.also-header a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f302b;
+  text-decoration: none;
+}
+
+.also-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.also-product img {
+  width: 110%;
+  height: 350px;
+  object-fit: cover;
+  padding: 12px;
+  transition: 0.4s ease;
+}
+
+.also-product:hover img {
+  transform: scale(1.02);
+}
+
+.also-product h3 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1f302b;
+  padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .bouquet-overlay {
+    padding: 0 40px;
+  }
+
+  .bouquet-toolbar {
+    padding: 24px 40px 10px;
+  }
+
+  .bouquet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px 40px 70px;
+  }
+
+  .also-section {
+    padding: 60px 40px 80px;
+  }
+
+  .also-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bouquet-card img,
+  .also-product img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .bouquet-hero {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .bouquet-overlay {
+    padding: 0 20px;
+  }
+
+  .bouquet-hero h1 {
+    font-size: 42px;
+  }
+
+  .bouquet-hero p {
+    font-size: 16px;
+  }
+
+  .bouquet-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .bouquet-toolbar button {
+    width: 100%;
+  }
+
+  .bouquet-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 20px 60px;
+    gap: 40px;
+  }
+
+  .bouquet-card img {
+    height: 280px;
+  }
+
+  .also-section {
+    padding: 50px 20px 70px;
+  }
+
+  .also-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .also-header h2 {
+    font-size: 24px;
+  }
+
+  .also-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .also-product img {
+    height: 260px;
+  }
+
+  .hurtig-tilfoej {
+    display: inline-block;
+    margin: 14px 12px 0;
+  }
+}
