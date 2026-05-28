@@ -1,5 +1,5 @@
 .bouquet-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/HapperFlower/images/hero.webp");
   background-size: cover;
   background-position: center;
   height: 55vh;
